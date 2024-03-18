@@ -19,7 +19,10 @@
 {% elsif site.color_scheme == "four" %}
   $color: #50c8c9;
   $color-2: #ffbe57;
-{% else %}
+{% elsif site.color_scheme == "five" %}
+  $color: #6c8d83;
+  $color-2: #CBDBC5;
+{% else%}  
   $color: #6690b9;
   $color-2: #dd9d71;
 {% endif %}
