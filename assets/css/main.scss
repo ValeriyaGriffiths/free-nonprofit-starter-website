@@ -20,9 +20,9 @@
   $color: #50c8c9;
   $color-2: #ffbe57;
 {% elsif site.color_scheme == "five" %}
-  $color: #6c8d83;
+  $color: #85A59C;
   $color-2: #CBDBC5;
-{% else%}  
+{% else %}
   $color: #6690b9;
   $color-2: #dd9d71;
 {% endif %}
