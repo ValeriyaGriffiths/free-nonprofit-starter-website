@@ -6,6 +6,24 @@
     {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
     {% if site.org_general_email_inbox %}{{ site.org_general_email_inbox }}{% endif %}
   </address>
+  <div class="clearfix"></div>
+  <div class="info text-center">
+    <!-- <h4 class="sub-title">Get Connected</h4> -->
+    <ul class="social-icons list-inline">
+      {% if site.org_twitter_username %}
+      <li><a href="https://twitter.com/{{ site.org_twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      {% endif %}
+      {% if site.org_facebook_username %}
+      <li><a href="https://www.facebook.com/{{ site.org_facebook_username }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      {% endif %}
+      {% if site.org_instagram_username %}
+      <li><a href="http://instagram.com/{{ site.org_instagram_username }}"><i class="fa fa-instagram"></i></a></li>
+      {% endif %}
+      {% if site.org_general_email_inbox %}
+      <li class="last"><a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a></li>
+      {% endif %}
+    </ul>
+  </div>
   <div class="container text-center">
     <small class="copyright">
       The information provided is for informational purposes only and should not be considered to be healthcare advice or medical diagnosis, treatment or prescribing. None of this information should be considered a promise of benefits, a claim of cures, a legal warranty or a guarantee of results to be achieved. This information is not intended as a substitute for advice from your physician or other healthcare professionals. You should not use this information for diagnosis or treatment of any health problem or for prescription of any medication or other treatment. You should consult with a healthcare professional before altering or discontinuing any current medications, treatment or care, starting any diet, exercise or supplementation program, or if you have or suspect you might have a health problem.
