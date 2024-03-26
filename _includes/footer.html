@@ -1,5 +1,11 @@
 <!-- ******FOOTER****** -->
 <footer class="footer">
+  <address class="text-center">
+    <strong>{{ site.org_name }}</strong><br>
+    {% if site.org_street_address %}{{ site.org_street_address }},&nbsp;{% endif %}{% if site.org_address_suite %}{{ site.org_address_suite }}<br>{% endif %}
+    {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
+    {% if site.org_general_email_inbox %}{{ site.org_general_email_inbox }}{% endif %}
+  </address>
   <div class="container text-center">
     <small class="copyright">
       The information provided is for informational purposes only and should not be considered to be healthcare advice or medical diagnosis, treatment or prescribing. None of this information should be considered a promise of benefits, a claim of cures, a legal warranty or a guarantee of results to be achieved. This information is not intended as a substitute for advice from your physician or other healthcare professionals. You should not use this information for diagnosis or treatment of any health problem or for prescription of any medication or other treatment. You should consult with a healthcare professional before altering or discontinuing any current medications, treatment or care, starting any diet, exercise or supplementation program, or if you have or suspect you might have a health problem.
