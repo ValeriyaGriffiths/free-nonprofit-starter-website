@@ -563,9 +563,11 @@ pre code {
   color: #fff;
 }
 .footer .copyright {
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
+  // -webkit-opacity: 0.8;
+  // -moz-opacity: 0.8;
+  // opacity: 0.8;
+  color: #FFFFFE;
+  font-size: 12px;
 }
 .footer .fa-heart {
   color: $heart;
