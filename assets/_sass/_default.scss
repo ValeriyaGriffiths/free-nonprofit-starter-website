@@ -277,8 +277,10 @@ pre code {
   font-size: 18px;
 }
 /* ======= Board Section ======= */
-.board-table {  
-  width: -webkit-fill-available; 
+.board .table {  
+  width: -webkit-fill-available;  
+}
+.board .table .td {
   text-align: center;
 }
 
