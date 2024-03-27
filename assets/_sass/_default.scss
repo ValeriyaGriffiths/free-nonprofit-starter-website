@@ -114,12 +114,12 @@ pre code {
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
-.header.navbar-fixed-top .logo a {
-  color: $color;
-}
-.header.navbar-fixed-top .main-nav .nav .nav-item a {
-  color: $text-secondary;
-}
+// .header.navbar-fixed-top .logo a {
+//   color: $color;
+// }
+// .header.navbar-fixed-top .main-nav .nav .nav-item a {
+//   color: $text-secondary;
+// }
 .header .logo {
   margin: 0;
   font-size: 26px;
@@ -157,10 +157,10 @@ pre code {
   margin-right: 30px;
   font-family: 'Montserrat', sans-serif;
 }
-.header .main-nav .nav .nav-item.active a {
-  color: $color;
-  background: none;
-}
+// .header .main-nav .nav .nav-item.active a {
+//   color: $color;
+//   background: none;
+// }
 .header .main-nav .nav .nav-item a {
   color: darken($color, 20%);
   -webkit-transition: none;
