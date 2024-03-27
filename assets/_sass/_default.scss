@@ -281,12 +281,10 @@ pre code {
   width: -webkit-fill-available;  
   margin-left: auto;
   margin-right: auto;
-}
-.board .td {
-  text-align: center;
-}
+} 
 .board table, td, th {
   border-width: 0;
+  text-align: center;
 }
 
 /* ======= Join Section ======= */
