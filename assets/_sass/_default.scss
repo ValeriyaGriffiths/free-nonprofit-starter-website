@@ -157,12 +157,12 @@ pre code {
   margin-right: 30px;
   font-family: 'Montserrat', sans-serif;
 }
-// .header .main-nav .nav .nav-item.active a {
-//   color: $color;
-//   background: none;
-// }
+.header .main-nav .nav .nav-item.active a { 
+  color: darken($color, 30%);
+  background: none;
+}
 .header .main-nav .nav .nav-item a {
-  color: darken($color, 50%);
+  color: #FAFAFA;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
