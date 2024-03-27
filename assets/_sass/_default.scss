@@ -183,7 +183,7 @@ pre code {
   background: none;
 }
 .header .main-nav .nav .nav-item.active {
-  color: $color;
+  color: darken($color, 30%);
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
