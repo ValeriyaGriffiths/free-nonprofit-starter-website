@@ -114,14 +114,13 @@ layout: default
       
         <form id="loginForm" target="donationsIframe" method="POST" action="https://scotest.authorize.net/payment/CatalogPayment.aspx"> 
           <input type="hidden" name="LinkId" value ="d28c4e8a-d1b2-42d7-9e8d-ed5cc22bb798"/> 
-          <input type="submit" /> 
+          <input type="submit"/> 
         </form>
  
-        <iframe name="donationsIframe" src="#">
+        <iframe name="donationsIframe" src="https://scotest.authorize.net/payment/CatalogPayment.aspx">
            Your browser does not support inline frames.
         </iframe>
-
-        // Hide the form and do the submit 
+ 
         <script>
         $(document).ready(function(){
         var loginform= document.getElementById("loginForm");
