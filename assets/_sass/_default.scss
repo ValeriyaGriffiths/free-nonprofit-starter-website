@@ -276,6 +276,10 @@ pre code {
   color: darken($color, 30%);
   font-size: 18px;
 }
+/* ======= Board Section ======= */
+.board .table { 
+  width: 120%;
+}
 /* ======= Join Section ======= */
 .join {
   padding: 80px 0;
