@@ -285,6 +285,9 @@ pre code {
 .board .td {
   text-align: center;
 }
+.board table, td, th {
+  border-width: 0;
+}
 
 /* ======= Join Section ======= */
 .join {
