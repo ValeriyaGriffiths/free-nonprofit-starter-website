@@ -277,8 +277,9 @@ pre code {
   font-size: 18px;
 }
 /* ======= Board Section ======= */
-.board .table { 
-  width: 120%;
+.board-table {  
+  width: -webkit-fill-available; 
+  text-align: center;
 }
 
 /* ======= Join Section ======= */
