@@ -117,7 +117,24 @@ layout: default
       <div class="info">
         <p><strong>Become a donor today.</strong><br></p>
       
-        <form name="PrePage" method = "post" action = "https://scotest.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="d28c4e8a-d1b2-42d7-9e8d-ed5cc22bb798" /> <input type = "submit" value = "Donate" /> </form>
+        <form id="loginForm" target="donationsIframe" method="POST" action="https://scotest.authorize.net/payment/CatalogPayment.aspx"> 
+          <input type="hidden" name="LinkId" value ="d28c4e8a-d1b2-42d7-9e8d-ed5cc22bb798"/> 
+          <input type="submit" /> 
+        </form>
+ 
+        <iframe name="donationsIframe" src="#">
+           Your browser does not support inline frames.
+        </iframe>
+
+        // Hide the form and do the submit 
+        <script>
+        $(document).ready(function(){
+        var loginform= document.getElementById("loginForm");
+        loginform.style.display = "none";
+        loginform.submit();
+        });
+        </script>
+
       </div><!--//info--> 
     </div><!--//donate-inner-->
   </div><!--//container-->
