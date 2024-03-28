@@ -1,15 +1,20 @@
 <!-- ******FOOTER****** -->
 <footer class="footer">
  
-  </div><!--//container-->
-  <div class="social-media">
-    <div class="info text-center"> 
-        {% if site.org_general_email_inbox %}
-        <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
-        {% endif %} 
-    </div>
-  </div>
-  </div>
+  <section id="contact" class="contact section has-pattern">
+    <div class="container">
+      <div class="contact-inner">   
+        <div class="info text-center">
+            <!-- <h4 class="sub-title">Get Connected</h4> --> 
+            <div class="social-icons">
+            {% if site.org_general_email_inbox %}
+            <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
+            {% endif %} 
+          </div><!--//social-icons-->
+        </div><!--//info-->
+      </div><!--//contact-inner-->
+    </div><!--//container-->
+  </section><!--//contact-->
 
 
   <div class="container text-center">
