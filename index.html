@@ -29,31 +29,23 @@ layout: default
         <ul class="nav navbar-nav"> 
           <li class="nav-item"><a class="scrollto" href="#mission">Our Mission</a></li>
           <li class="nav-item"><a class="scrollto" href="#board">Our Board</a></li>
-          <li class="nav-item last"><a class="scrollto" href="#donate">Donate</a></li> 
-
-           <li class="nav-item">
-            <section id="contact" class="contact section has-pattern">
-              <div class="container">
-                <div class="contact-inner">   
-                  <div class="info text-center">
-                      <!-- <h4 class="sub-title">Get Connected</h4> --> 
-                      <div class="social-icons">
-                      {% if site.org_general_email_inbox %}
-                      <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
-                      {% endif %} 
-                    </div><!--//social-icons-->
-                  </div><!--//info-->
-                </div><!--//contact-inner-->
-              </div><!--//container-->
-            </section><!--//contact-->
-
-           </li> 
-
+          <li class="nav-item last"><a class="scrollto" href="#donate">Donate</a></li>  
           <!-- <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li> -->
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->
-  </div>
+  </div> <!--//container-->
+
+  <div class="header-actions header-actions--right">           
+    <div class="header-actions-action header-actions-action--social">  
+          <a class="icon icon--fill  header-icon header-icon-border-shape-none header-icon-border-style-outline" href="mailto: {{ site.org_general_email_inbox }}" target="_blank" aria-label="Instagram" id="yui_3_17_2_1_1711661607345_298">
+            <svg viewBox="23 23 64 64">
+              <use xlink:href="#instagram-unauth-icon" width="110" height="110"></use>
+            </svg>
+          </a> 
+    </div>    
+  </div>  
+
 </header><!--//header-->
 
 <!-- ******PROMO****** -->
