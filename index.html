@@ -29,8 +29,27 @@ layout: default
         <ul class="nav navbar-nav"> 
           <li class="nav-item"><a class="scrollto" href="#mission">Our Mission</a></li>
           <li class="nav-item"><a class="scrollto" href="#board">Our Board</a></li>
-          <li class="nav-item"><a class="scrollto" href="#donate">Donate</a></li> 
-          <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+          <li class="nav-item last"><a class="scrollto" href="#donate">Donate</a></li> 
+
+           <li class="nav-item">
+            <section id="contact" class="contact section has-pattern">
+              <div class="container">
+                <div class="contact-inner">   
+                  <div class="info text-center">
+                      <!-- <h4 class="sub-title">Get Connected</h4> --> 
+                      <div class="social-icons">
+                      {% if site.org_general_email_inbox %}
+                      <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
+                      {% endif %} 
+                    </div><!--//social-icons-->
+                  </div><!--//info-->
+                </div><!--//contact-inner-->
+              </div><!--//container-->
+            </section><!--//contact-->
+
+           </li> 
+
+          <!-- <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li> -->
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->
@@ -121,8 +140,7 @@ layout: default
 <!-- ******CONTACT****** -->
 <section id="contact" class="contact section has-pattern">
   <div class="container">
-    <div class="contact-inner">
-      <h2 class="title  text-center">Contact</h2>
+    <div class="contact-inner"> 
       <address class="text-center">
         <strong>{{ site.org_name }}</strong><br> 
       </address>
