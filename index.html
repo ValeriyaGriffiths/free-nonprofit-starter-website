@@ -127,11 +127,13 @@ layout: default
         <strong>{{ site.org_name }}</strong><br> 
       </address>
       <div class="clearfix"></div>
-      <div class="social-icons">
-        <!-- <h4 class="sub-title">Get Connected</h4> --> 
-        {% if site.org_general_email_inbox %}
-        <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
-        {% endif %} 
+      <div class="info text-center">
+          <!-- <h4 class="sub-title">Get Connected</h4> --> 
+          <div class="social-icons">
+          {% if site.org_general_email_inbox %}
+          <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
+          {% endif %} 
+        </div><!--//social-icons-->
       </div><!--//info-->
     </div><!--//contact-inner-->
   </div><!--//container-->
