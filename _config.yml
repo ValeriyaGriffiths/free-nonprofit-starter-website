@@ -6,8 +6,11 @@
 #REQUIRED
 org_name: KAMBO CASITA
 org_summary: > # Enter your summary on the next line. Be sure to indent by two spaces.
-org_full_description: > # Enter your description on the next line. Be sure to indent by two spaces.
-  This website is under construction. Please come back soon.
+org_mission: > # Enter your description on the next line. Be sure to indent by two spaces.
+  Kambo Casita is dedicated to building and protecting bridges between the everyday and sacred. Creating pathways to each individual’s healing process to remember who they are with an emphasis on integrity, safety and empowerment.
+org_vision: >
+  Our vision is to safely support self healing and growth in order to help humanity. Through individualized and small group educational workshops, trainings and sacred ceremonies. Kambo Casita is dedicated to continuous collaboration and education supporting indigenous wisdom keepers while bringing their sacred teachings to the Western world.
+
 
 #OPTIONAL
 #Non US-address support coming soon
