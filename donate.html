@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<head> 
+  <title>kambocasita.org</title>
+  <link rel="icon" href="https://static.wixstatic.com/media/5767ab_5bb22aaebda94c21938275675aff9a19~mv2.png" type="image/x-icon"/>
+</head>
+
+<!-- ******HEADER****** -->
+<header id="header" class="header">
+  <div class="container">
+    <h1 class="logo pull-left">
+      <!-- <a href="https://www.kambocasita.com/"> -->
+        <span class="logo-title">
+          <img src="https://static.wixstatic.com/media/5767ab_046b1135dadf4417958c8b8f04fbcdcb~mv2.png/v1/crop/x_0,y_6,w_1397,h_345/fill/w_275,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2_edited.png" alt="2_edited.png" style="width:275px;height:68px;object-fit:cover" width="275" height="68" srcset="https://static.wixstatic.com/media/5767ab_046b1135dadf4417958c8b8f04fbcdcb~mv2.png/v1/crop/x_0,y_6,w_1397,h_345/fill/w_550,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2_edited.png" fetchpriority="high">    
+        </span>
+      <!-- </a> -->
+    </h1><!--//logo-->
+    <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button><!--//nav-toggle-->
+      </div><!--//navbar-header-->
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav"> 
+          <li class="nav-item"><a class="scrollto" href="#mission">Our Mission</a></li>
+          <li class="nav-item"><a class="scrollto" href="#vision">Our Vision</a></li>
+          <li class="nav-item last"><a class="scrollto" href="#donate">Donate</a></li>   
+        </ul><!--//nav-->
+      </div><!--//navabr-collapse-->
+    </nav><!--//main-nav-->
+  </div> <!--//container--> 
+</header><!--//header-->
+ 
+
+<!-- ******DONATE****** -->
+<section id="donate" class="donate section text-center">
+  <div class="container">
+    <div class="donate-inner">
+      <h2 class="title text-center">Donate</h2>
+      <div class="info">
+        <p><strong>This donation form is currently under construction.</strong><br></p>
+      
+        <form id="loginForm" target="donationsIframe" method="POST" action="https://scotest.authorize.net/payment/CatalogPayment.aspx"> 
+          <input type="hidden" name="LinkId" value ="d28c4e8a-d1b2-42d7-9e8d-ed5cc22bb798"/> 
+          <input type="submit"/> 
+        </form>
+ 
+        <iframe name="donationsIframe" src="https://scotest.authorize.net/payment/CatalogPayment.aspx">
+           Your browser does not support inline frames.
+        </iframe>
+ 
+        <script>
+        $(document).ready(function(){
+        var loginform= document.getElementById("loginForm");
+        loginform.style.display = "none";
+        loginform.submit();
+        });
+        </script>
+
+      </div><!--//info--> 
+    </div><!--//donate-inner-->
+  </div><!--//container-->
+</section><!--//how-->
+
+ 
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+  <div class="container">
+    <div class="contact-inner"> 
+      <address class="text-center">
+        <strong>{{ site.org_name }}</strong><br> 
+      </address>
+      <div class="clearfix"></div>
+      <div class="info text-center">
+          <!-- <h4 class="sub-title">Get Connected</h4> --> 
+          <div class="social-icons">
+          {% if site.org_general_email_inbox %}
+          <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
+          {% endif %} 
+        </div><!--//social-icons-->
+      </div><!--//info-->
+    </div><!--//contact-inner-->
+  </div><!--//container-->
+</section><!--//contact-->
