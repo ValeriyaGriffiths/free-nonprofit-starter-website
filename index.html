@@ -69,38 +69,6 @@ layout: default
     <p class="intro text-center">{{ site.org_vision }}</p>
   </div><!--//container-->
 </section><!--//mission-->
-
-
-<!-- ******DONATE****** -->
-<section id="donate" class="donate section text-center">
-  <div class="container">
-    <div class="donate-inner">
-      <h2 class="title text-center">Donate</h2>
-      <div class="info">
-        <p><strong>This donation form is currently under construction.</strong><br></p>
-      
-        <form id="loginForm" target="donationsIframe" method="POST" action="https://scotest.authorize.net/payment/CatalogPayment.aspx"> 
-          <input type="hidden" name="LinkId" value ="d28c4e8a-d1b2-42d7-9e8d-ed5cc22bb798"/> 
-          <input type="submit"/> 
-        </form>
- 
-        <iframe name="donationsIframe" src="https://scotest.authorize.net/payment/CatalogPayment.aspx">
-           Your browser does not support inline frames.
-        </iframe>
- 
-        <script>
-        $(document).ready(function(){
-        var loginform= document.getElementById("loginForm");
-        loginform.style.display = "none";
-        loginform.submit();
-        });
-        </script>
-
-      </div><!--//info--> 
-    </div><!--//donate-inner-->
-  </div><!--//container-->
-</section><!--//how-->
-
  
 <!-- ******CONTACT****** -->
 <section id="contact" class="contact section has-pattern">
