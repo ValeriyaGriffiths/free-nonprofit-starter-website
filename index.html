@@ -64,27 +64,3 @@ layout: default
     <p class="intro text-center">{{ site.org_vision }}</p>
   </div><!--//container-->
 </section><!--//mission-->
- 
-<!-- ******CONTACT****** -->
-<section id="contact" class="contact section has-pattern">
-  <div class="container">
-    <div class="contact-inner"> 
-      <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br> 
-      </address>
-      <div class="clearfix"></div>
-      
-      <div class="info text-center">
-          <h4 class="sub-title">
-            {% for myimage in site.static_files %}
-              {{ myimage.path }}
-            {% endfor %}
-          {% if site.org_general_email_inbox %}</h4> 
-          <div class="social-icons"> 
-          <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
-          {% endif %} 
-        </div><!--//social-icons-->
-      </div><!--//info-->
-    </div><!--//contact-inner-->
-  </div><!--//container-->
-</section><!--//contact-->
