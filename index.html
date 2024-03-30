@@ -7,7 +7,7 @@ layout: default
     <h1 class="logo pull-left">
       <!-- <a href="https://www.kambocasita.com/"> -->
         <span class="logo-title">
-          <img src="https://static.wixstatic.com/media/5767ab_046b1135dadf4417958c8b8f04fbcdcb~mv2.png/v1/crop/x_0,y_6,w_1397,h_345/fill/w_275,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2_edited.png" alt="2_edited.png" style="width:275px;height:68px;object-fit:cover" width="275" height="68" srcset="https://static.wixstatic.com/media/5767ab_046b1135dadf4417958c8b8f04fbcdcb~mv2.png/v1/crop/x_0,y_6,w_1397,h_345/fill/w_550,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2_edited.png" fetchpriority="high">    
+          <img src="kc_logo_header.png" alt="kc_logo_header.png" style="width:275px;height:68px;object-fit:cover" fetchpriority="high">    
         </span>
       <!-- </a> -->
     </h1><!--//logo-->
@@ -73,9 +73,14 @@ layout: default
         <strong>{{ site.org_name }}</strong><br> 
       </address>
       <div class="clearfix"></div>
+      
       <div class="info text-center">
           <!-- <h4 class="sub-title">Get Connected</h4> --> 
           <div class="social-icons">
+            {% assign image_files = site.static_files | where: "image", true %}
+            {% for myimage in image_files %}
+              {{ myimage.path }}
+            {% endfor %}
           {% if site.org_general_email_inbox %}
           <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
           {% endif %} 
