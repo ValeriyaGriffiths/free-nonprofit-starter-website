@@ -21,35 +21,14 @@ layout: default
         </iframe>
  
         <script>
-        $(document).ready(function(){
-        var loginform= document.getElementById("loginForm");
-        loginform.style.display = "none";
-        loginform.submit();
-        });
+          jQuery(document).ready(function($){
+          var loginform= document.getElementById("loginForm");
+          loginform.style.display = "none";
+          loginform.submit();
+          });
         </script>
 
       </div><!--//info--> 
     </div><!--//donate-inner-->
   </div><!--//container-->
 </section><!--//how-->
-
- 
-<!-- ******CONTACT****** -->
-<section id="contact" class="contact section has-pattern">
-  <div class="container">
-    <div class="contact-inner"> 
-      <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br> 
-      </address>
-      <div class="clearfix"></div>
-      <div class="info text-center">
-          <!-- <h4 class="sub-title">Get Connected</h4> --> 
-          <div class="social-icons">
-          {% if site.org_general_email_inbox %}
-          <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
-          {% endif %} 
-        </div><!--//social-icons-->
-      </div><!--//info-->
-    </div><!--//contact-inner-->
-  </div><!--//container-->
-</section><!--//contact-->
