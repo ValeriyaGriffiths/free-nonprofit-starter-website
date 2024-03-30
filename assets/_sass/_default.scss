@@ -577,7 +577,7 @@ pre code {
 } 
 .footer .social-icons a {
   display: inline-block;
-  background: darken($color, 15%);
+  background: $color;
   width: 48px;
   height: 48px;
   text-align: center;
