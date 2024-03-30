@@ -75,13 +75,12 @@ layout: default
       <div class="clearfix"></div>
       
       <div class="info text-center">
-          <!-- <h4 class="sub-title">Get Connected</h4> --> 
-          <div class="social-icons">
-            {% assign image_files = site.static_files | where: "image", true %}
-            {% for myimage in image_files %}
+          <h4 class="sub-title">
+            {% for myimage in site.static_files %}
               {{ myimage.path }}
             {% endfor %}
-          {% if site.org_general_email_inbox %}
+          {% if site.org_general_email_inbox %}</h4> 
+          <div class="social-icons"> 
           <a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a>
           {% endif %} 
         </div><!--//social-icons-->
